@@ -8,36 +8,51 @@ body{
 
 }
 
-
 #calculator {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 250px;
-    height: 300px;
+    height: 350px;
     gap: 10px;
     padding: 10px;
+    padding-top: 20px;
+    border: 2px solid black;
     border-radius: 10px;
     background-color: #B0A4A4;
     
 }
 
 #display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 230px;
-    height: 50px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 5px;
     background-color: #C5E8F0;
+}
+
+#numbers {
+    display: flex;
+    overflow: hidden;
+    padding-right: 6px;
+    font-size: 20px;
 }
 
 #keyboard {
     display: flex;
+    flex-direction: column;
     width: 230px;
     height: 100%;
-    gap: 0;
+    gap: 2px;
 }
 
 #keys {
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     margin: 0;
     gap: 2px;
 }
@@ -49,17 +64,27 @@ body{
     border: 2px solid black;
     border-radius: 5px;
     width: calc(260px/5);
+    font-size: 180%;
     background-color: gray;
 }
 
-
-#clear {
-    align-self: center;
+#clear-back {
     display: flex;
+    gap: 2px;
+}
+
+#clear, #backspace {
+    display: flex;
+    align-self: center;
     justify-content: center;
     align-items: center;
-    height: 20%;
-    width: 100%;
-    background-color: red;
-    margin: 0;
+    height: 30px;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #E6B59A;
+}
+
+#backspace {
+    background-color: #FFA5F3;
 }
